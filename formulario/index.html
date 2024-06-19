@@ -7,6 +7,68 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <form action="Formulario.php" autocomplete="off" >
+        <p><b>Campos requeridos</b></p>
+        <p>Número Incidencia:</p>
+        <input type="text" name="Incidencia" id="incidencia" required placeholder="Q1167" disabled>
+        <p>Fecha/Hora de recepción</p>
+        <input type="datetime-local" name="recepción" id="recepción" required disabled>
+        <p><b>Informacion del Usuario</b></p>
+        <label for="nombre">Nombre del cliente</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" minlength="10" maxlength="30" required>
+        <label for="Identificacion">Identificacion</label>
+        <input type="number" name="Identificacion" id="Identificacion" minlength="6" maxlength="20" placeholder="Documento Identidad" required >
+        <br><br><label for="Tipo_identificacion">Tipo Identificacion</label>
+        <select name="Tipo_identificacion" id="Tipo_identificacion"required>
+          <option value="Tarjeta_identidad">Tarjeta Identidad</option>
+          <option value="Cedula_ciudadania" selected >Cedula Ciudadania</option>
+          <option value="Pasaporte">Pasaporte</option>
+        </select>
+        <label for="Solicitud">Tipo de Solicitud</label>
+        <select name="Solicitud" id="Solicitud" required>
+          <option value="Estudiante">Estudiante</option>
+          <option value="Administrador">Administrador</option>
+          <option value="Docente" selected>Docente</option>
+        </select>
+        <br><br><label for="correo">E-mail:</label>
+        <input type="email" name="correo" id="correo" minlength="6" maxlength="20" placeholder="Correo " required>
+        <p><b>Informacion De Contacto</b></p>
+        <label for="pais">Pais</label>
+        <select name="pais" id="pais" required disabled>
+            <option value="Cl" selected>Colombia</option>
+        </select>
+        <label for="departamento">Departamento</label>
+        <select name="departamento" id="departamento" required disabled>
+          <option value="Bog"select>Bogota D.C</option>
+          <option value="Bug">Bucaramanga</option>
+        </select>
+        <br><br><label for="ciudad">ciudad:</label>
+        <select name="ciudad" id="ciudad" required disabled>
+          <option value="Bog" selected>Bogota D.C</option>
+        </select>
+        <br><br><label for="telefono">Telefono:</label>
+        <input type="tel" name="telefono" id="telefono" minlength="6" maxlength="15"  placeholder="Fijo">
+        <label for="celular">Celular:</label>
+        <input type="tel" name="celular" id="celular" minlength="10" maxlength="20" placeholder=" Mobil">
+        <br><br><label for="mediocontacto">Medio de contacto preferido:</label>
+        <select name="mediocontacto" id="mediocontacto">
+          <option value="correo">Correo</option>
+          <option value="telefono"selected>Telefono</option>
+          <option value="celular">Celular</option>
+        </select>
+        <label for="direccion">Direccion:</label>
+        <input type="text" name="direccion" id="direccion" placeholder="calle _ carrera _-_" minlength="6" required maxlength="30">
+        <p><b>Informacion de Solicitud</b></p>
+        <label for="Fechavencimiento">Fecha de vencimiento:</label>
+        <input type="datetime-local" name="Fechavencimiento" id="Fechavencimiento" required disabled>
+        <br><label for="asunto">Asunto:</label>
+        <input type="text" name="asunto" id="asunto" placeholder="Quejas" required minlength="5" maxlength="30">
+        <br><label for="descripcion">Descripcion:</label>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder=" Quejas oracle"></textarea>
+        <br><br><label for="adjunto:">Adjunto:</label>
+        <input type="file" name="adjunto" id="adjunto" accept=".jpg /.png">
     
+        <br><br><button type="submit">Enviar</button> 
+      </form>
 </body>
 </html>
