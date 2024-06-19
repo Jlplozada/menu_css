@@ -24,13 +24,17 @@ body{
  }
  img{max-width: 300px;}
  .goku{
-    padding: auto;
+    display: block;
+    margin: 0 auto;
+    width: 50vh;
      filter: drop-shadow(10px 10px 10px yellow) 
            drop-shadow(0px -0px 0 yellow);
            border-radius: 40px;
  }
  .spiderman_nf{
-    padding: auto;
+    display: block;
+    margin: 0 auto;
+    width: 50vh;
      filter: drop-shadow( 10px 0 10px red) 
            drop-shadow( 0 0 red);
            border-radius: 40px;
