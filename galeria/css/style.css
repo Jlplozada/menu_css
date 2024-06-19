@@ -1,0 +1,38 @@
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fondo-color:aliceblue;
+    --carta-color:rgb(184, 201, 39);
+}
+body{
+    background-color: var(--fondo-color);
+}
+.caja{
+  margin: 0 auto;
+  max-height: 800px;
+  max-width: 1250px;
+  
+}
+img{
+    filter: drop-shadow(16px 1px 5px black);
+    max-height: 300px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.texto{
+    text-align: center;
+}
+.card{
+    display: inline-block;
+    box-sizing: content-box;
+    margin-left: 20px;
+    background-color: var(--carta-color);
+    height: 380px;
+    width: 230px;
+    border-radius: 10px;
+    padding-top: 20px;
+    border: 4px solid black;
+}
