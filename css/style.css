@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;    
+}
+:root{
+    --color-fondo1:aqua;
+    --color-fonfo2:blue;
+    --text-color:black;
+}
+a{
+    color: var(--text-color);
+}
+body{
+    background-color: var(--color-fondo1);
+}
+div{
+    background-color: var(--color-fondo2);
+}
