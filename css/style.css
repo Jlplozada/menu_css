@@ -1,19 +1,59 @@
-*{
+:root {
+    --background-color: #f4f4f4;
+    --card-background-color: #fff;
+    --card-width: 300px;
+    --card-padding: 20px;
+    --card-border-radius: 10px;
+    --card-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --font-family: Arial, sans-serif;
+    --text-color: #333;
+    --link-color: #007bff;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
-    text-decoration: none;    
+    height: 100vh;
+    display: grid;
+    place-items: center;
 }
-:root{
-    --color-fondo1:aqua;
-    --color-fonfo2:blue;
-    --text-color:black;
+
+.aprendiz, .actividades {
+    text-align: center;
+    margin-bottom: 20px;
 }
-a{
+
+.actividades ul {
+    list-style: none;
+    padding: 0;
+}
+
+.actividades ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.actividades ul li a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.card {
+    background-color: var(--card-background-color);
+    width: var(--card-width);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-box-shadow);
+    text-align: center;
+}
+
+.card h2 {
     color: var(--text-color);
+    margin-top: 0;
 }
-body{
-    background-color: var(--color-fondo1);
-}
-div{
-    background-color: var(--color-fondo2);
+
+.card p {
+    color: var(--text-color);
 }
