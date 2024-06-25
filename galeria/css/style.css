@@ -1,31 +1,36 @@
-*{
+* {
     margin: 0;  
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --fondo-color:aliceblue;
-    --carta-color:rgb(184, 201, 39);
+
+:root {
+    --fondo-color: aliceblue;
+    --carta-color: rgb(184, 201, 39);
 }
-body{
+
+body {
     background-color: var(--fondo-color);
 }
-.caja{
-  margin: 0 auto;
-  max-height: 800px;
-  max-width: 1250px;
-  
+
+.caja {
+    margin: 0 auto;
+    max-height: 800px;
+    max-width: 1250px;
 }
-img{
+
+img {
     filter: drop-shadow(16px 1px 5px black);
     max-height: 300px;
     margin: auto;
     box-sizing: border-box;
 }
-.texto{
+
+.texto {
     text-align: center;
 }
-.card{
+
+.card {
     display: inline-block;
     box-sizing: content-box;
     margin-left: 20px;

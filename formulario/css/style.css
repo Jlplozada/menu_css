@@ -27,13 +27,6 @@ form label {
     color: #555;
 }
 
-form input[type="text"],
-form input[type="number"],
-form input[type="datetime-local"],
-form input[type="email"],
-form input[type="tel"],
-form input[type="file"],
-form select,
 form textarea {
     width: 100%;
     padding: 10px;
@@ -41,12 +34,6 @@ form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-}
-
-form input[disabled],
-form select[disabled],
-form textarea[disabled] {
-    background-color: #e9ecef;
 }
 
 form textarea {
